@@ -553,7 +553,7 @@
             this.pnlMain.Padding = new System.Windows.Forms.Padding(4);
             this.pnlMain.Size = new System.Drawing.Size(698, 521);
             this.pnlMain.TabIndex = 6;
-            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
+            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlMain_Paint);
             // 
             // contextMenuClipboardIO
             // 

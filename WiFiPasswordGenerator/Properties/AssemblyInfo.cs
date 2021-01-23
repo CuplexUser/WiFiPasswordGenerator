@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MD")]
 [assembly: AssemblyProduct("WiFi Password Generator Made by Martin Dahl 2020")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("Cuplex. Email: iddt@hotmail.com")]
 [assembly: AssemblyCulture("")]
 
@@ -35,7 +35,7 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("3.2.4.*")]
-[assembly: AssemblyFileVersion("3.2.4.1")]
+[assembly: AssemblyVersion("3.2.5.*")]
+[assembly: AssemblyFileVersion("3.2.5.1")]
 [assembly: NeutralResourcesLanguage("en")]
 

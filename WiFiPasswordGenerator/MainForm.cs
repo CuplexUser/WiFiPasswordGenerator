@@ -63,7 +63,7 @@ namespace WiFiPasswordGenerator
             Log.Verbose("Main form loaded");
         }
 
-        private void pnlMain_Paint(object sender, PaintEventArgs e)
+        private void PnlMain_Paint(object sender, PaintEventArgs e)
         {
             using (var g = e.Graphics)
             {
@@ -246,11 +246,11 @@ namespace WiFiPasswordGenerator
             SetUserDefinedQRSize(rbUserDefined.Checked);
         }
 
-        private void SetUserDefinedQRSize(bool userDinened)
+        private void SetUserDefinedQRSize(bool userDefined)
         {
             try
             {
-                if (userDinened)
+                if (userDefined)
                 {
                     _qrOutputSize.Width = int.Parse(txtUserDefinedQRWidth.Text);
                     _qrOutputSize.Height = int.Parse(txtUserDefinedQRHeight.Text);
@@ -401,8 +401,8 @@ namespace WiFiPasswordGenerator
 
         private bool IsValidSsid()
         {
-            Regex ssidRegex = new Regex(@"^[\w-]{8,}$");
-            return txtSSId.Text.Length >= 8 && ssidRegex.IsMatch(txtSSId.Text);
+            Regex ssidRegex = new Regex(@"^[\w-\d\.]{4,}$");
+            return txtSSId.Text.Length >= 4 && ssidRegex.IsMatch(txtSSId.Text);
         }
 
         private void toolStripMenuItemImportPassword_Click(object sender, EventArgs e)
@@ -577,7 +577,7 @@ namespace WiFiPasswordGenerator
             }
 
             string tValue = WPAEncryption ? "WPA" : "WEP";
-            string template = $"WIFI:S:{ssid};T:{tValue};P:{password};H:{ssidHidden.ToString()}";
+            string template = $"WIFI:S:{ssid};T:{tValue};P:{password};H:{ssidHidden}";
             return template;
         }
 
