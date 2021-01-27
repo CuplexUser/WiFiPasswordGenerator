@@ -4,13 +4,12 @@ using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-
-[assembly: AssemblyTitle("WiFi Password Generator Made by Martin Dahl 2020")]
+// associated with an assembly.     
+[assembly: AssemblyTitle("WiFi Password Generator Made by Martin Dahl 2021")]
 [assembly: AssemblyDescription("A tool for creating random wifi passwords with QR codes")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("MD")]
-[assembly: AssemblyProduct("WiFi Password Generator Made by Martin Dahl 2020")]
+[assembly: AssemblyCompany("Cuplex")]
+[assembly: AssemblyProduct("WiFi Password Generator Made by Martin Dahl 2021")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("Cuplex. Email: iddt@hotmail.com")]
 [assembly: AssemblyCulture("")]
