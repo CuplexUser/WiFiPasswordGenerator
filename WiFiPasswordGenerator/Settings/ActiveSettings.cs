@@ -1,4 +1,6 @@
-﻿namespace WiFiPasswordGenerator.Settings
+﻿using GeneralToolkitLib.Utility;
+
+namespace WiFiPasswordGenerator.Settings
 {
     /// <summary>
     /// Aplication current config

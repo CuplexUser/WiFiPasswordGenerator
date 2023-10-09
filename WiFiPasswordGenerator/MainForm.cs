@@ -57,9 +57,10 @@ namespace WiFiPasswordGenerator
         private void MainForm_Load(object sender, EventArgs e)
         {
             linkLabelLastQRPath.Text = "";
-            var appInfo = AplicationAssemblyInfo.CreateFromAssembly(Assembly.GetExecutingAssembly());
+            var assemblyVersion = Assembly.GetExecutingAssembly().ImageRuntimeVersion.ToString();
+            var assemblyProduct = Assembly.GetExecutingAssembly().GetName().Name;
 
-            Text = $"{appInfo.AssemblyProduct} - Version: {appInfo.AssemblyVersion}";
+            Text = $"{assemblyProduct} - Version: {assemblyVersion}";
             Log.Verbose("Main form loaded");
         }
 
@@ -502,7 +503,7 @@ namespace WiFiPasswordGenerator
                 optimalPixelsPerMatrixModule = Convert.ToInt32(Math.Ceiling(pixelsDelta / Convert.ToDouble(moduleCount)));
 
 
-                qrCodeImg = qrCode.CreateBitmap(optimalPixelsPerMatrixModule);
+                qrCodeImg = qrCode.GetGraphic(optimalPixelsPerMatrixModule);
             });
 
 

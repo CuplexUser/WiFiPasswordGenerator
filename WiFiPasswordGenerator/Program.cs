@@ -26,7 +26,7 @@ namespace WiFiPasswordGenerator
                 ? new SerilogAutoConfig.LogSettings(ApplicationBuildConfig.UserDataPath, LogEventLevel.Verbose)
                 : new SerilogAutoConfig.LogSettings(ApplicationBuildConfig.UserDataPath, LogEventLevel.Warning);
             var config = new SerilogAutoConfig(settings);
-            config.InitializeLogger();
+            
         }
     }
 }
